@@ -1,0 +1,20 @@
+framework: >= net45
+
+source https://nuget.org/api/v2
+nuget FSharp.Configuration
+nuget FSharp.Core >= 3.1.2.1
+nuget FSharp.Formatting
+nuget RazorEngine
+
+group Build
+source https://nuget.org/api/v2
+nuget FAKE
+github fsharp/FAKE modules/Octokit/Octokit.fsx
+
+group Test
+source https://nuget.org/api/v2
+nuget FSharp.Core redirects: on
+nuget FsCheck.Xunit
+nuget Unquote
+nuget xunit
+nuget xunit.runner.console

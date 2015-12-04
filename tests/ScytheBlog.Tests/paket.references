@@ -1,0 +1,6 @@
+group Test
+FsCheck
+FsCheck.Xunit
+FSharp.Core redirects: on
+xunit
+Unquote
